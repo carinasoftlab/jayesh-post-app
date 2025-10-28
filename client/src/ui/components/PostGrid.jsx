@@ -13,7 +13,7 @@ export default function PostGrid() {
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-          className="w-8 h-8 border-3 border-teal-600 border-t-transparent rounded-full"
+          className="w-8 h-8 border-3 border-blue-400 border-t-transparent rounded-full"
         />
       </div>
     )
@@ -56,8 +56,8 @@ export default function PostGrid() {
           className="group bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-xl hover:border-teal-200 transition-all overflow-hidden"
         >
           <div className="p-6 space-y-3">
-            <div className="h-1 w-12 bg-gradient-to-r from-teal-600 to-emerald-600 rounded-full group-hover:w-full transition-all duration-300" />
-            <h3 className="text-lg font-bold text-gray-900 line-clamp-2 group-hover:text-teal-600 transition-colors">
+            <div className="h-1 w-12 bg-gradient-to-r from-blue-400 to-indigo-600 rounded-full group-hover:w-full transition-all duration-300" />
+            <h3 className="text-lg font-bold text-gray-900 line-clamp-2 group-hover:text-blue-400 transition-colors">
               {post.title}
             </h3>
             {post.author && (
@@ -65,7 +65,7 @@ export default function PostGrid() {
             )}
             <p className="text-sm text-gray-600 line-clamp-3 leading-relaxed">{post.content}</p>
           </div>
-          <div className="flex items-center justify-between px-6 py-3 bg-gradient-to-r from-teal-50 to-emerald-50 border-t border-gray-200">
+          <div className="flex items-center justify-between px-6 py-3 bg-gradient-to-r from-blue-50 to-indigo-50 border-t border-gray-200">
             <time className="text-xs text-gray-600 font-medium">
               {new Date(post.createdAt).toLocaleDateString("en-US", {
                 year: "numeric",

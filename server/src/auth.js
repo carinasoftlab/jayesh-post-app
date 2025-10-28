@@ -3,12 +3,12 @@ import jwt from 'jsonwebtoken';
 const COOKIE_NAME = 'jid';
 
 export function signToken(userId) {
-  const secret = process.env.JWT_SECRET || 'dev-secret';
+  const secret = process.env.JWT_SECRET || 'Mya0rUgyXVgrld/eT2opaKGfDIW+WRctPdehEJvG4M0Kqg7eH8lDfWYPi26n89kk';
   return jwt.sign({ sub: userId }, secret, { expiresIn: '7d' });
 }
 
 export function verifyToken(token) {
-  const secret = process.env.JWT_SECRET || 'dev-secret';
+  const secret = process.env.JWT_SECRET || 'Mya0rUgyXVgrld/eT2opaKGfDIW+WRctPdehEJvG4M0Kqg7eH8lDfWYPi26n89kk';
   return jwt.verify(token, secret);
 }
 

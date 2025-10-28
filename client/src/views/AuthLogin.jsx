@@ -29,10 +29,10 @@ export default function AuthLogin() {
   const itemVariants = { hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white via-teal-50/30 to-emerald-50/20 flex items-center justify-center px-4 py-12">
-      <motion.div variants={containerVariants} initial="hidden" animate="visible" className="w-full max-w-md">
+    <div className="min-h-[calc(100vh-100px)] bg-gradient-to-br from-white via-blue-50/30 to-indigo-50/20 flex items-center justify-center px-4 py-12">
+      <motion.div variants={containerVariants} initial="hidden" animate="visible" className="w-full max-w-xl">
         <motion.div variants={itemVariants} className="text-center mb-12">
-          <h1 className="text-5xl font-bold text-gray-900 mb-3">Welcome Back</h1>
+          <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-400 to-indigo-600 bg-clip-text text-transparent mb-3">Welcome Back</h1>
           <p className="text-lg text-gray-600">Continue your post reading journey</p>
         </motion.div>
 
@@ -49,7 +49,7 @@ export default function AuthLogin() {
               onChange={(e) => setForm((v) => ({ ...v, username: e.target.value }))}
               placeholder="yourusername"
               required
-              className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:border-transparent transition-all"
+              className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent transition-all"
             />
           </motion.div>
 
@@ -61,7 +61,7 @@ export default function AuthLogin() {
               onChange={(e) => setForm((v) => ({ ...v, password: e.target.value }))}
               placeholder="••••••••"
               required
-              className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-500/50 focus:border-transparent transition-all"
+              className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent transition-all"
             />
           </motion.div>
 
@@ -81,7 +81,7 @@ export default function AuthLogin() {
             whileTap={{ scale: 0.98 }}
             type="submit"
             disabled={loading}
-            className="w-full py-3 rounded-xl bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-semibold hover:shadow-lg hover:shadow-teal-200 disabled:opacity-60 disabled:cursor-not-allowed transition-all mt-8"
+            className="w-full py-3 rounded-xl bg-gradient-to-r from-blue-400 to-indigo-600 text-white font-semibold hover:shadow-lg hover:shadow-blue-200 disabled:opacity-60 disabled:cursor-not-allowed transition-all mt-8"
           >
             {loading ? "Signing in..." : "Sign In"}
           </motion.button>
@@ -90,7 +90,7 @@ export default function AuthLogin() {
         <motion.div variants={itemVariants} className="text-center mt-8">
           <p className="text-gray-600">
             Don't have an account?{" "}
-            <Link to="/register" className="text-teal-600 font-semibold hover:text-emerald-600 transition-colors">
+            <Link to="/register" className="text-blue-400 font-semibold hover:text-indigo-600 transition-colors">
               Create one
             </Link>
           </p>

@@ -28,7 +28,7 @@ export default function Topbar() {
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
-      className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-emerald-100"
+      className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-blue-100"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -46,10 +46,10 @@ export default function Topbar() {
               <Link
                 key={item.href}
                 to={item.href}
-                className="text-gray-700 hover:text-teal-600 font-medium transition-colors relative group"
+                className="text-gray-700 hover:text-blue-400 font-medium transition-colors relative group"
               >
                 {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-teal-600 to-emerald-600 group-hover:w-full transition-all duration-300" />
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-indigo-600 group-hover:w-full transition-all duration-300" />
               </Link>
             ))}
           </div>
@@ -61,10 +61,10 @@ export default function Topbar() {
             )}
             {!user ? (
               <>
-                <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+                <motion.div whileHover={{ scale: 1 }} whileTap={{ scale: 0.98 }}>
                   <Link
                     to="/login"
-                    className="px-4 py-2 text-gray-700 hover:text-teal-600 font-medium transition-colors"
+                    className="px-4 py-2 text-gray-700 hover:text-blue-400 font-medium transition-colors"
                   >
                     Login
                   </Link>
@@ -72,7 +72,7 @@ export default function Topbar() {
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                   {/* <Link
                     to="/register"
-                    className="px-4 py-2 rounded-full bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-semibold hover:shadow-lg hover:shadow-teal-200 transition-all"
+                    className="px-4 py-2 rounded-full bg-gradient-to-r from-blue-400 to-indigo-600 text-white font-semibold hover:shadow-lg hover:shadow-blue-200 transition-all"
                   >
                     Register
                   </Link> */}
@@ -83,7 +83,7 @@ export default function Topbar() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={logout}
-                className="px-4 py-2 rounded-full bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-semibold hover:shadow-lg hover:shadow-teal-200 transition-all"
+                className="px-4 py-2 rounded-full bg-gradient-to-r from-blue-400 to-indigo-600 text-white font-semibold hover:shadow-lg hover:shadow-blue-200 transition-all"
               >
                 Logout
               </motion.button>

@@ -18,7 +18,7 @@ export default function DashboardPosts() {
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-          className="w-8 h-8 border-3 border-teal-600 border-t-transparent rounded-full"
+          className="w-8 h-8 border-3 border-blue-400 border-t-transparent rounded-full"
         />
       </div>
     )
@@ -60,10 +60,10 @@ export default function DashboardPosts() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8 mt-8">
       <div className="text-center">
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-3">
-          My <span className="bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">Posts</span>
+          My <span className="bg-gradient-to-r from-blue-400 to-indigo-600 bg-clip-text text-transparent">Posts</span>
         </h1>
         <p className="text-lg text-gray-600">Manage and edit your published posts</p>
-        <div className="mt-4 h-1 w-12 bg-gradient-to-r from-teal-600 to-emerald-600 rounded-full"></div>
+        <div className="mt-4 h-1 w-12 bg-gradient-to-r from-blue-400 to-indigo-600 rounded-full"></div>
       </div>
 
       <AnimatePresence mode="popLayout">
@@ -97,11 +97,11 @@ export default function DashboardPosts() {
                         </div>
                         <div className="space-y-2">
                           <label className="block text-sm font-semibold text-gray-700">Post Title</label>
-                          <input type="text" value={form.title} onChange={(e) => setForm((v) => ({ ...v, title: e.target.value }))} className="w-full px-4 py-3 rounded-xl bg-white border border-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all" />
+                          <input type="text" value={form.title} onChange={(e) => setForm((v) => ({ ...v, title: e.target.value }))} className="w-full px-4 py-3 rounded-xl bg-white border border-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" />
                         </div>
                         <div className="space-y-2">
                           <label className="block text-sm font-semibold text-gray-700">Content</label>
-                          <textarea value={form.content} onChange={(e) => setForm((v) => ({ ...v, content: e.target.value }))} rows={6} className="w-full px-4 py-3 rounded-xl bg-white border border-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all resize-none" />
+                          <textarea value={form.content} onChange={(e) => setForm((v) => ({ ...v, content: e.target.value }))} rows={6} className="w-full px-4 py-3 rounded-xl bg-white border border-gray-200 text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none" />
                         </div>
                         <div className="flex gap-3 pt-2">
                           <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} onClick={saveEdit} className="flex-1 px-4 py-3 rounded-xl bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-semibold hover:shadow-lg hover:shadow-teal-200 transition-all">Save Changes</motion.button>
@@ -129,7 +129,7 @@ export default function DashboardPosts() {
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                           onClick={() => startEdit(p)}
-                          className="px-4 py-2 rounded-lg bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-semibold hover:shadow-lg hover:shadow-teal-200 transition-all text-sm"
+                          className="px-4 py-2 rounded-lg bg-gradient-to-r from-blue-400 to-indigo-600 text-white font-semibold hover:shadow-lg hover:shadow-blue-200 transition-all text-sm"
                         >
                           Edit
                         </motion.button>

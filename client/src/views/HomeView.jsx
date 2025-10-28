@@ -89,7 +89,7 @@ export default function HomeView() {
           className="mb-16 text-center"
         >
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
-            Share Your <span className="bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent">Posts</span>
+            Share Your <span className="bg-gradient-to-r from-blue-400 to-indigo-600 bg-clip-text text-transparent">Posts</span>
           </h1>
         
         </motion.div>
@@ -111,7 +111,7 @@ export default function HomeView() {
                     Sign in to share your thoughts and connect with our community.
                   </p>
                   <div className="space-y-3">
-                    <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+                    <motion.div whileHover={{ scale: 1 }} whileTap={{ scale: 0.98 }}>
                       <Link
                         to="/login"
                         className="block w-full px-4 py-3 text-center rounded-xl bg-gray-100 border border-gray-200 text-gray-700 font-semibold hover:bg-gray-200 transition-colors"
@@ -119,10 +119,10 @@ export default function HomeView() {
                         Sign In
                       </Link>
                     </motion.div>
-                    <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+                    <motion.div whileHover={{ scale: 1 }} whileTap={{ scale: 0.98 }}>
                       <Link
                         to="/register"
-                        className="block w-full px-4 py-3 text-center rounded-xl bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-semibold hover:shadow-lg hover:shadow-teal-200 transition-all"
+                        className="block w-full px-4 py-3 text-center rounded-xl bg-gradient-to-r from-blue-400 to-indigo-600 text-white font-semibold hover:shadow-lg hover:shadow-blue-200 transition-all"
                       >
                         Create Account
                       </Link>
@@ -136,7 +136,7 @@ export default function HomeView() {
           <motion.div variants={itemVariants} className="lg:col-span-2">
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Latest Posts</h2>
-              <div className="h-1 w-12 bg-gradient-to-r from-teal-600 to-emerald-600 rounded-full mb-6" />
+              <div className="h-1 w-12 bg-gradient-to-r from-blue-400 to-indigo-600 rounded-full mb-6" />
               <PostGrid />
             </div>
           </motion.div>
